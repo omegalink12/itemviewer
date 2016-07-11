@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Item database viewer for CrossCode" />
+    <title>Item Database Viewer</title>
+    <script src="lib/FileSaver.min.js"></script>
+    <script src="main.js"></script>
+    <link href="jsoneditor.min.css" rel="stylesheet" type="text/css">
+	<script src="jsoneditor-minimalist.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <h1>Item Database Viewer</h1>
+    <fieldset>
+        <legend> item-database.json </legend>
+        <input type="file" id="database" />
+        <input id="load" type="button" value="Load" disabled />
+    </fieldset>
+    <form>
+        <fieldset>
+            <legend> Select Item </legend>
+            <select id="list" size="25">
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend> Item </legend>
+            <div id="jsoneditor" style=" float:left; width: 400px; height: 400px;"></div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

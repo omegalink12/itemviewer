@@ -1,0 +1,9 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+}
